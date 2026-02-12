@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "shell": {
+            "executable": "cmd.exe",
+            "args": ["/d", "/c"]
+        }
+    },
+    "tasks": [
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "${workspaceFolder}\\ld\\Scripts\\activate.bat && pip install -r requirements.txt",
+            "group": "build"
+        },
+        {
+            "label": "Update Data Library",
+            "type": "shell",
+            "command": "${workspaceFolder}\\ld\\Scripts\\activate.bat && pip install --upgrade lseg-data",
+            "group": "build"
+        }
+    ]
+}
