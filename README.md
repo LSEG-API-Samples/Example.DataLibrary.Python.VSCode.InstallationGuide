@@ -32,7 +32,7 @@ Some organization might deployed the Data Library for Python and other packages 
 
 Please contact your local IT support to help you access your company internal repo. 
 
-I am demonstrating with the [Python venv](https://docs.python.org/3/library/venv.html) and [PyPI](https://pypi.org/) repository in this article. If you are using Conda, please see the steps on the [first article]() for more detail.
+I am demonstrating with the [Python venv](https://docs.python.org/3/library/venv.html) and [PyPI](https://pypi.org/) repository in this article. If you are using Conda, please see the steps on the [first article](https://developers.lseg.com/en/article-catalog/article/step-by-step-guide-install-data-library-python-virtual-env) for more detail.
 
 ## The Basic Rule
 
