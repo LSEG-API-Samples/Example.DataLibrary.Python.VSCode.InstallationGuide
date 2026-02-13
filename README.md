@@ -58,7 +58,7 @@ This error message means the Python already has the NumPy library version 1.x (f
 
 We can handle this dependencies conflict issue with a  **Python virtual environment**. A Python virtual environment is an isolated directory containing its own Python interpreter and a set of installed packages. This isolation prevents conflicts between dependencies of different Python projects and ensures project reproducibility.
 
-VS Code has excellent support for Python virtual environments through the Python extension. This article demonstrates how to set up and use Python virtual environments with VS Code using both [venv](https://docs.python.org/3/library/venv.html) and [Anaconda](https://www.anaconda.com/)/[MiniConda](https://www.anaconda.com/docs/getting-started/miniconda/main).
+VS Code has excellent support for Python virtual environments through the Python extension. This article demonstrates how to set up and use Python virtual environments with VS Code using [venv](https://docs.python.org/3/library/venv.html).
 
 It is recommend that **you create and use one virtual environment per one Python project**.
 
