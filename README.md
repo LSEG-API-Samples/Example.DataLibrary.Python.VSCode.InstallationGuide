@@ -1,4 +1,4 @@
-# Step-By-Step Guide to Set Up Python Development Environment for LSEG Data Library in Visual Studio Code
+# Step-By-Step Guide to Set Up Python Development Environment in Visual Studio Code using LSEG Data Library
 
 ## Introduction
 
@@ -6,7 +6,9 @@
 
 The Data Library is latest evolution of library that provides a set of ease-of-use interfaces offering coders uniform access to the breadth and depth of LSEG financial data and services. The [Data Library for Python](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python) provides a set of ease-of-use interfaces offering coders uniform access to the breadth and depth of financial data and services available on the Workspace, RDP, and Real-Time Platforms via the Python programming language. The API is designed to provide consistent access through multiple access channels and target both Professional Developers and Financial Coders. Developers can choose to access content from the desktop, through their deployed streaming services, or directly to the cloud. With the Data Library, the same Python code can be used to retrieve data regardless of which access point you choose to connect to the platform.
 
-This article is a sequel to my [Step-By-Step Guide to install Data Library for Python Part 1](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python.InstallationGuide). The part 2 provides a step-by-step guide to set up a Python development environment for the Data Library in [Visual Studio Code](https://code.visualstudio.com/) (VS Code). VS Code is a popular, free, and open-source code editor that provides excellent support for Python development through extensions, integrated terminal, debugging capabilities, and more. I strongly recommend you read this article together with the [library Quick Start page](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start) to cover all basic knowledge that you need to use the library.
+This article is a sequel to my [Step-By-Step Guide to install Data Library for Python using Virtual Environment](https://developers.lseg.com/en/article-catalog/article/step-by-step-guide-install-data-library-python-virtual-env) article ([GitHub](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python.InstallationGuide)). This sequel provides a step-by-step guide to set up a Python development environment in [Visual Studio Code](https://code.visualstudio.com/) (VS Code) using the Data Library for Python as an example API. VS Code is a popular, free, and open-source code editor that provides excellent support for Python development through extensions, integrated terminal, debugging capabilities, and more. I strongly recommend you read this article together with the [library Quick Start page](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start) to cover all basic knowledge that you need to use the library.
+
+Please note that even through the article aims for the LSEG Data Library for Python application development, the steps can be applied to other Python libraries with VS Code too.
 
 ## Prerequisite 
 
@@ -14,9 +16,13 @@ This article is a sequel to my [Step-By-Step Guide to install Data Library for P
 
 You need the [Python](https://www.python.org/) programming language installed on your machine.
 
+This article is based on Python version 3.12.
+
 ### Visual Studio Code
 
 You need [Visual Studio Code](https://code.visualstudio.com/) installed on your machine. You can download it from the [official website](https://code.visualstudio.com/download).
+
+This article is based on VS Code version January 2026 (update version 1.109.3).
 
 ### Access to Python Package Repository
 
@@ -237,7 +243,7 @@ Recommended Exertions
 
 ## Setting Up Python Virtual Environment with Anaconda in VS Code
 
-Please check my [Step-By-Step Guide to install Data Library for Python Part 1](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python.InstallationGuide) article about how to create a Conda environment. The VS Code Python and Jupyter Extensions can recognize the Conda environment as Python environment for working too.
+Please check my [Step-By-Step Guide to install Data Library for Python using Virtual Environment](https://developers.lseg.com/en/article-catalog/article/step-by-step-guide-install-data-library-python-virtual-env) article ([GitHub](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python.InstallationGuide)) about how to create a Conda environment. The VS Code Python and Jupyter Extensions can recognize the Conda environment as Python environment for working too.
 
 ## Working with Jupyter Notebooks in VS Code
 
@@ -511,8 +517,11 @@ You can find more detail regarding the Data Library and VS Code from the followi
 - [The Data Library for Python - Quick Reference Guide (Access layer)](https://developers.lseg.com/en/article-catalog/article/the-data-library-for-python-quick-reference-guide-access-layer) article
 - [Essential Guide to the Data Libraries - Generations of Python library (EDAPI, RDP, RD, LD)](https://developers.lseg.com/en/article-catalog/article/essential-guide-to-the-data-libraries) article
 - [Data Library for Python Examples on GitHub](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python) repository
+- [Step-By-Step Guide to install Data Library for Python using Virtual Environment](https://developers.lseg.com/en/article-catalog/article/step-by-step-guide-install-data-library-python-virtual-env) article.
+- [Step-By-Step Guide to install Data Library for Python using Virtual Environment GitHub](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python.InstallationGuide)
 
 **VS Code Resources:**
+
 - [Visual Studio Code - Python Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
 - [VS Code - Python Environments](https://code.visualstudio.com/docs/python/environments)
 - [VS Code - Jupyter Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
