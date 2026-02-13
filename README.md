@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Disclosure**: This article is AI generated content with my reviewed and revised. The AI is [GitHub Copilot](https://github.com/features/copilot) with *Claude Sonnet 4.5* agent.
+**Disclosure**: This article is AI generated content with my reviewed, revised, and correction. The AI is [GitHub Copilot](https://github.com/features/copilot) with *Claude Sonnet 4.5* agent.
 
 The Data Library is latest evolution of library that provides a set of ease-of-use interfaces offering coders uniform access to the breadth and depth of LSEG financial data and services. The [Data Library for Python](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python) provides a set of ease-of-use interfaces offering coders uniform access to the breadth and depth of financial data and services available on the Workspace, RDP, and Real-Time Platforms via the Python programming language. The API is designed to provide consistent access through multiple access channels and target both Professional Developers and Financial Coders. Developers can choose to access content from the desktop, through their deployed streaming services, or directly to the cloud. With the Data Library, the same Python code can be used to retrieve data regardless of which access point you choose to connect to the platform.
 
@@ -66,7 +66,7 @@ It is recommend that **you create and use one virtual environment per one Python
 
 ### Step 1: Install the Python Extension
 
-Open Visual Studio Code and navigate to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (Mac).
+Open Visual Studio Code and navigate to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window or by pressing **Ctrl+Shift+X** (Windows/Linux) or **Cmd+Shift+X** (Mac).
 
 Search for **[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)** in the Extensions marketplace and install the official Python extension published by Microsoft.
 
@@ -86,7 +86,7 @@ After installing the Python extension, you see the list of extensions that bundl
 
 ![alt text](images/02_vscode_python_ext.png "Install Python Extension succeed")
 
-you can verify your Python installation by opening the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and typing "Python: Select Interpreter".
+you can verify your Python installation by opening the Command Palette (**Ctrl+Shift+P** or **Cmd+Shift+P**) and typing "Python: Select Interpreter".
 
 ![alt text](images/03_vscode_select_interpreter.png "Select Python Interpreter")
 
@@ -96,27 +96,27 @@ You can find more detail on the [Python in Visual Studio Code](https://code.visu
 
 ### Step 3: Install the Jupyter Notebook Extensions
 
-Next, open VS Code Extensions panel and search for **[Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)* to install Jupyter Notebook extensions.
+Next, open VS Code Extensions panel and search for **[Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)** to install Jupyter Notebook extensions.
 
 ![alt text](images/04_vscode_jupyter_ext.png "Install Jupyter Extension")
-Jupyter
+
 After installing the Jupyter extension, you see the list of extensions that bundled with the Jupyter extension as follows:
 
 ![alt text](images/05_vscode_jupyter_ext.png "Install Jupyter Extension succeed")
 
-you can verify your Jupyter extension installation by creating any **.ipynb** file and see if it shows a notebook application like this.
+You can verify your Jupyter extension installation by creating any **.ipynb** file and see if it shows a notebook application like this.
 
 ![alt text](images/06_vscode_jupyter_ext.png "Open Jupyter File in VS Code")
 
-## Setting Up Python Virtual Environment with venv in VS Code
+## Working with venv in VS Code
 
-I am demonstrating the Data Library for Python on VS Code setupp using the venv. The [Python venv](https://docs.python.org/3/library/venv.html) is a Python built-in module that lets developers create and manage Python virtual environment. The venv lets developers manage and install Python packages from [PyPI](https://pypi.org/) with a [pip tool](https://packaging.python.org/en/latest/tutorials/installing-packages/).
+I am demonstrating the Data Library for Python on VS Code setup using the venv. The [Python venv](https://docs.python.org/3/library/venv.html) is a Python built-in module that lets developers create and manage Python virtual environment. The venv lets developers manage and install Python packages from [PyPI](https://pypi.org/) with a [pip tool](https://packaging.python.org/en/latest/tutorials/installing-packages/).
 
 With the venv, a virtual environment always uses the same Python version as the based version.
 
 ### Step 1: Create a Virtual Environment
 
-Open a project folder in VS Code and then, open the integrated terminal in VS Code (**Ctrl+`** or **View > Terminal**) and run the following command to create a virtual environment:
+Open a project folder in VS Code and then, open the integrated terminal in VS Code (**Ctrl+** or **View > Terminal**) and run the following command to create a virtual environment:
 
 ```bash
 python -m venv ld
@@ -132,13 +132,13 @@ This creates a new virtual environment in a folder named *ld* within your projec
 
 After creating the virtual environment, VS Code may automatically detect it and prompt you to select it. If not, you can manually select it:
 
-1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`)
+1. Open the Command Palette (**Ctrl+Shift+P** or **Cmd+Shift+P**)
 2. Type "Python: Select Interpreter"
 3. Select the *ld* virtual environment
 
-![alt text](images/08_vscode_select_venv.png "Select venv in VS Code")
+![alt text](images/article79_ld_vscode/08_vscode_select_venv.png "Select venv in VS Code")
 
-![alt text](images/09_vscode_select_venv.png "Select ld ven in VS Code")
+![alt text](images/article79_ld_vscode/09_vscode_select_venv.png "Select ld venv in VS Code")
 
 The selected interpreter will be displayed in the status bar at the bottom of VS Code when you open the Python file.
 
@@ -185,7 +185,7 @@ pip install lseg-data jupyterlab matplotlib pandas
 pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org --no-cache-dir lseg-data
 ```
 
-![alt text](images/12_vscode_pip_install.png "Install LSEG Data Library in VS Code")
+![alt text](images/12_vscode_pip_install.png "Install LSEG Data Library in VS Code terminal")
 
 ### Step 5: Verify the Installation
 
@@ -207,7 +207,7 @@ You should see the Data Library version printed in the terminal output.
 
 ### Step 6: Create a Requirements File
 
-To track your project dependencies, create a `requirements.txt` file. In the VS Code terminal, run:
+To track your project dependencies, create a **requirements.txt** file. In the VS Code terminal, run:
 
 ```bash
 pip freeze > requirements.txt
@@ -231,7 +231,7 @@ VS Code provides excellent features for Python development:
 
 ![alt text](images/16_vscode_intellisense.png "IntelliSense in VS Code")
 
-**Debugging**: Set breakpoints by clicking in the left margin of the editor, then press `F5` to start debugging.
+**Debugging**: Set breakpoints by clicking in the left margin of the editor, then press **F5** to start debugging.
 
 ![alt text](images/17_vscode_debug.png "Debugging in VS Code")
 
