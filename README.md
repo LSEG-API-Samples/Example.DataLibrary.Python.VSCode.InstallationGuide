@@ -225,6 +225,8 @@ pip install -r requirements.txt
 
 ### Step 7: Working with Python Files in VS Code
 
+**Note**: Do not forget to create your **lseg-data.config.json** configuration file with your connection credential in the same location as an application. See [Library Quick Start](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start) and [GitHub](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python/tree/lseg-data-examples/Configuration) pages for more details.
+
 VS Code provides excellent features for Python development:
 
 **IntelliSense and Code Completion**: As you type, VS Code provides intelligent code completion suggestions.
@@ -237,7 +239,7 @@ VS Code provides excellent features for Python development:
 
 If you interested in Linting and code formatting, you can follow instructions on the [Linting Python in Visual Studio Code](https://code.visualstudio.com/docs/python/linting) and [Formatting Python in VS Code](https://code.visualstudio.com/docs/python/formatting) pages.
 
-Recommended Exertions
+Other recommended extension:
 - [Microsoft Pylint](https://marketplace.visualstudio.com/items?itemName=ms-python.pylint) extension
 - [Microsoft autopep8](https://marketplace.visualstudio.com/items?itemName=ms-python.autopep8) extension
 
@@ -251,29 +253,30 @@ VS Code has excellent support for Jupyter Notebooks, allowing you to work with `
 
 ### Step 1: Create a New Notebook
 
-1. Open the Command Palette (`Ctrl+Shift+P`), and type  "Create: New Jupyter Notebook". Alternatively, you may create a file with *.ipynb* extension manually.
-2. Save the newly created *.ipynb* file to the name that you prefer (I am using *notebook.ipynb* name).
+Firstly, Open the Command Palette (**Ctrl+Shift+P**), and type  "Create: New Jupyter Notebook". Alternatively, you may create a file with *.ipynb* extension manually.
+
+Next, Save the newly created *.ipynb* file to the name that you prefer (I am using *notebook.ipynb* name).
 
 ![alt text](images/18_vscode_create_notebook.png "Create Jupyter Notebook in VS Code")
 
-3. Select your virtual environment as the kernel by clicking on the "Select Kernel" button.
+Then, select your virtual environment as the kernel by clicking on the "Select Kernel" button.
 
 ![alt text](images/19_vscode_create_notebook.png "Create Jupyter Notebook in VS Code")
 
-4. Then choose, "Python Environments" (If you already have existing Jupyter Server, you can choose this option, but it is out of scope of this article)
+Then choose, "Python Environments" (If you already have existing Jupyter Server, you can choose this option, but it is out of scope of this article)
 
 ![alt text](images/20_vscode_create_notebook.png "Create Jupyter Notebook in VS Code")
 
-5. Choose an environment with [Jupyterlab](https://jupyter.org/install) installation.
+Choose an environment with [Jupyterlab](https://jupyter.org/install) installation.
 
 ![alt text](images/21_vscode_create_notebook.png "Create Jupyter Notebook in VS Code")
 
-6. You see that the selected environment named is shown on the notebook kernel button.
+You see that the selected environment named is shown on the notebook kernel button.
 
 ![alt text](images/22_vscode_create_notebook.png "Create Jupyter Notebook in VS Code")
 
 
-### Step 3: Use the Data Library in a Notebook
+### Step 2: Use the Data Library in a Notebook
 
 Create new code cells and import the Data Library:
 
@@ -296,7 +299,9 @@ print(df)
 ld.close_session()
 ```
 
-Run the cell by clicking the play button or pressing `Shift+Enter`.
+**Note**: Do not forget to create your **lseg-data.config.json** configuration file with your connection credential in the same location as an application. See [Library Quick Start](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start) and [GitHub](https://github.com/LSEG-API-Samples/Example.DataLibrary.Python/tree/lseg-data-examples/Configuration) pages for more details.
+
+Run the cell by clicking the play button or pressing **Shift+Enter**.
 
 ![alt text](images/23_vscode_notebook_run.png "Run Jupyter Notebook cell in VS Code")
 
@@ -307,7 +312,7 @@ VS Code's Jupyter integration provides:
 - IntelliSense and code completion
 - Debugging support
 
-ํWith the Jupyter Notebook, you can create markdown cells for documentation and code cells for the code.
+With the Jupyter Notebook, you can create markdown cells for documentation and code cells for the code.
 
 ![alt text](images/24_vscode_notebook.png "Jupyter Notebook cell in VS Code")
 
@@ -319,7 +324,7 @@ VS Code makes it easy to work with multiple Python projects, each with their own
 
 ### Workspace Settings
 
-You can configure Python settings per workspace by creating a `.vscode/settings.json` file in your project folder:
+You can configure Python settings per workspace by creating a **.vscode/settings.json** file in your project folder:
 
 ```json
 {
@@ -348,7 +353,7 @@ You can easily switch between different Python environments:
 
 ### 1. Use Code Snippets
 
-Create custom code snippets for common Data Library operations. Go to `File > Preferences > Configure Snippets` and select Python:
+Create custom code snippets for common Data Library operations. Go to **File > Preferences > Configure Snippets** and select Python:
 
 ```json
 {
@@ -369,7 +374,7 @@ Create custom code snippets for common Data Library operations. Go to `File > Pr
 ### 2. Keyboard Shortcuts
 
 Learn these useful keyboard shortcuts:
-- **Ctrl+` ** - Toggle integrated terminal
+- **Ctrl+`** - Toggle integrated terminal
 - **Ctrl+Shift+P** - Command Palette
 - **Ctrl+/** - Toggle line comment
 - **Shift+Alt+F** - Format document
@@ -412,7 +417,7 @@ Run tasks via **Terminal > Run Task** command.
 
 ### 4. Configure Git Integration
 
-Initialize a Git repository and create a `.gitignore` file to exclude virtual environment folders:
+Initialize a Git repository and create a **.gitignore** file to exclude virtual environment folders:
 
 ```
 # Virtual Environment
@@ -439,6 +444,8 @@ __pycache__/
 # Environment files
 .env
 ```
+
+For more detail about the Source Control in VS Code, please check an [official document](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
 ## Troubleshooting
 
